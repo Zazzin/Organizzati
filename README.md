@@ -63,6 +63,7 @@ Importazioni
 
 Classe RectangleData
 	•RectangleData: Modello di dati per rappresentare un elemento dell’inventario.
+ 
 	•Proprietà:
 	•name: Nome dell’elemento.
 	•itemCount: Numero di articoli utilizzati.
@@ -72,6 +73,7 @@ Classe RectangleData
 	•Metodi:
 	•toMap(): Converte l’oggetto in una mappa per la serializzazione.
 	•fromMap(Map<String, dynamic> map): Crea un oggetto RectangleData da una mappa.
+ 
 Classe InventoryProvider
 	•InventoryProvider: Gestore dello stato per gli elementi dell’inventario.
 	•Proprietà:
@@ -88,6 +90,7 @@ Classe InventoryProvider
 	•incrementTotalValue(int index): Incrementa il valore totale degli articoli per un elemento.
 	•decrementTotalValue(int index): Decrementa il valore totale degli articoli per un elemento.
 	•toggleExpand(int index): Espande o riduce la visualizzazione dei dettagli di un elemento.
+ 
 Classe InventoryScreen
 	•InventoryScreen: Widget che rappresenta la schermata dell’inventario.
 	•Costruttore: const InventoryScreen({Key? key}) : super(key: key);
@@ -158,10 +161,12 @@ Importazioni
 - **`settings_controller.dart`**: Importa il file che gestisce le impostazioni, in particolare la modalità tema (chiaro/scuro).
 
 Classe NavBar
+
 - **`NavBar`**: Un widget stateful che gestisce la barra di navigazione e il cambio di pagina.
-  - **`SettingsController settingsController`**: Un controller per gestire le impostazioni dell'app, come il tema.
+- **`SettingsController settingsController`**: Un controller per gestire le impostazioni dell'app, come il tema.
 
 Stato di NavBar
+
     - _NavBarState`: Lo stato interno del widget `NavBar`.
    - Proprietà:
    - `PageController _pageController`: Controlla il cambio di pagina nel `PageView`.
@@ -170,6 +175,7 @@ Stato di NavBar
    - `dispose`: Libera le risorse utilizzate dal `PageController` quando il widget viene eliminato.
 
 Metodo `build`
+
     - `Scaffold*: Struttura di base dell'interfaccia con una `AppBar`, un `body` principale e una `bottomNavigationBar`.
     - `AppBar`: Contiene un pulsante per cambiare la modalità tema (chiaro/scuro).
     - `IconButton`: Cambia l'icona in base alla modalità tema corrente e aggiorna il tema quando viene premuto.
