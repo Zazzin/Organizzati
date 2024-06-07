@@ -51,10 +51,16 @@ File locali che definiscono provider per inventario e persone, e modelli di dati
     - `Person` e `RectangleData`: Modelli di dati per persone e articoli di inventario.
 Inventary.dart
 Importazioni
+
 	•import 'package:flutter/material.dart';: Importa il framework Flutter per la costruzione di interfacce utente.
+
 	•import 'package:provider/provider.dart';: Importa il pacchetto Provider per la gestione dello stato globale dell’app.
-	•import 'package:shared_preferences/shared_preferences.dart';: Importa il pacchetto SharedPreferences per la      memorizzazione dei dati locali.
+
+	•import 'package:shared_preferences/shared_preferences.dart';: Importa il pacchetto SharedPreferences per la memorizzazione dei dati locali.
+
 	•import 'dart:convert';: Importa il pacchetto Dart per la codifica e decodifica JSON.
+
+
 Classe RectangleData
 	•RectangleData: Modello di dati per rappresentare un elemento dell’inventario.
 	•Proprietà:
